@@ -1,0 +1,28 @@
+// 1. Defina a sua cor (O Roxo que você quer)
+$primary: #84e; 
+$enable-shadows: true;
+
+// 2. Importe o Bootstrap Completo 
+// (Isso já traz funções, variáveis e mapas na ordem correta)
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 3. O SEU CSS específico (que estava no style.css da raiz)
+#home-quote {
+  background: url('/img/bg-quote.jpg') center center;
+  background-size: cover;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-top {
+    position: relative !important;
+  }
+}
+
+.card-link {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-5px);
+}

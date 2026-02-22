@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caravan - Locais - Dublin</title>
+  <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css">"/css/style.css" />
+  <link rel="stylesheet" href="/css/main.css">"/style.css" />
+</head>
+
+<body>
+  <!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Entre na sua conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="sua-logica-de-login.php" method="POST">
+            <div class="mb-3">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword4" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="inputPassword4" required>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <small class="text-muted mt-2 text-center">Esqueceu a senha? <a href="#">Clique aqui</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU NAVEGAÇÃO -->
+  <nav class="container navbar navbar-expand-md navbar-light bg-light shadow-sm fixed-top mobile-top py-3">
+    <!-- LOGO -->
+    <a href="/index.html" class="navbar-brand">
+      <img src="/img/caravan.svg" alt="logo da caravan" />
+    </a>
+
+    <!-- MENU HAMBURG -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meuMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="collapse navbar-collapse" id="meuMenu">
+      <ul class="navbar-nav ms-auto">
+        <!-- LINK COM DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/locais/california.html">Califórnia</a>
+            <a class="dropdown-item" href="/locais/paris.html">Paris</a>
+            <a class="dropdown-item active" href="">Dublin</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn ms-md-2 btn-outline-primary" href="/inscrever.html">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SECTION 1 -->
+  <section class="container pt-lg-5 mt-lg-4">
+    <!-- TITULO -->
+    <div class="my-5 text-center">
+      <span class="h6 d-block">MELHOR DESTINO DA SUA VIAGEM</span>
+      <h1 class="display-4 text-primary">Descubra Dublin</h1>
+    </div>
+
+    <!-- IMAGENS -->
+    <div class="row">
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="/img/local/foto-1.jpg" alt="foto 1">
+        <img class="img-fluid mb-4" src="/img/local/foto-2.jpg" alt="foto 2">
+        <img class="img-fluid mb-4" src="/img/local/foto-3.jpg" alt="foto 3">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="/img/local/foto-4.jpg" alt="foto 4">
+        <img class="img-fluid mb-4" src="/img/local/foto-5.jpg" alt="foto 5">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="/img/local/foto-6.jpg" alt="foto 6">
+        <img class="img-fluid mb-4" src="/img/local/foto-7.jpg" alt="foto 7">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="container">
+    <!-- TITULO -->
+    <div class="my-5 text-center">
+      <span class="h6 d-block">DECUBRA O QUE ACONTECE NA CIDADE</span>
+      <h1 class="display-4 text-primary">Próximos Eventos</h1>
+    </div>
+
+    <!-- TABELA -->
+    <table class="table table-hover">
+      <!-- CABEÇALHO -->
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Evento</th>
+          <th scope="col">Local</th>
+          <th scope="col">Ticket</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">23/10</th>
+          <td>Julien Baker</td>
+          <td>The Academy</td>
+          <td>
+            <a href="" class="btn btn-outline-secondary btn-sm">Comprar Ticket
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">25/10</th>
+          <td>Lucy Rose</td>
+          <td>Olympia</td>
+          <td>
+            <a href="" class="btn btn-outline-secondary btn-sm">Comprar Ticket
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">27/10</th>
+          <td>Bon Iver</td>
+          <td>Whelans</td>
+          <td>
+            <a href="" class="btn btn-outline-secondary btn-sm">Comprar Ticket
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">01/11</th>
+          <td>Julien Baker</td>
+          <td>The Academy</td>
+          <td>
+            <a href="" class="btn btn-outline-secondary btn-sm">Comprar Ticket
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05/11</th>
+          <td>Lucy Rose</td>
+          <td>Olympia</td>
+          <td>
+            <a href="" class="btn btn-outline-secondary btn-sm">Comprar Ticket
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="container">
+    <!-- BOTÃO -->
+    <div class="text-center my-5">
+      <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+      <a href="/planos.html" class="btn  btn-primary btn-lg">Comprar Plano</a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <!-- LINKS -->
+    <div class="container py-4">
+      <div class="row">
+        <!-- PÁGINAS -->
+        <div class="col-lg-3 col-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="/planos.html">Planos</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+            <li><a href="/inscrever.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <!-- LOCAIS -->
+        <div class="col-lg-3 col-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="/locais/california.html">Califórnia</a></li>
+            <li><a href="/locais/paris.html">Paris</a></li>
+            <li><a href="">Dublin</a></li>
+          </ul>
+        </div>
+
+        <!-- DADOS DE CONTATO -->
+        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com</li>
+            <li>41 99999-9999</li>
+            <li>De Seg. Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+        <!-- REDE SOCIAIS -->
+        <div class="col-lg-2 text-center text-lg-start">
+          <h4 class="h6">REDE SOCIAIS</h4>
+          <ul class="list-unstyled d-grid gap-2">
+            <li><a class="btn btn-outline-secondary btn-sm w-100" style="max-width: 140px;" href="">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm w-100" style="max-width: 140px;" href="">X</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm w-100" style="max-width: 140px;" href="">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPY RIGHT -->
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan &copy; 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
